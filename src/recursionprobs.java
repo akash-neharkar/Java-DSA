@@ -5,8 +5,10 @@ public class recursionprobs {
 //        fun(5);
 //        funrev(5);
 //        funjoin(3);
-        int ans = productofdigits(1034);
-        System.out.println(ans);
+//        int ans = productofdigits(1034);
+//        System.out.println(ans);
+        rev1(1234);
+        System.out.println(sumrev);
     }
 
     //Function to print numbers n to 1
@@ -72,6 +74,16 @@ public class recursionprobs {
         return (n%10) * productofdigits(n/10);
     }
 
+    //Reverse a number using recursion
+    static int sumrev = 0;
+    static void rev1(int n){
+        if (n==0){
+            return;
+        }
+        int rem = n%10;
+        sumrev = sumrev * 10 + rem;
+        rev1(n/10);
+    }
 }
 
 
