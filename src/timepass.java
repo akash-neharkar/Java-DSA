@@ -1,6 +1,14 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 //Practice
+
+class calculator{
+    public void add(int n1, int n2){
+        int result = n1 + n2;
+        System.out.println("Addition of two values = " + result);
+    }
+}
+
 public class timepass {
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -22,5 +30,10 @@ public class timepass {
             System.out.println("Bye");
         }
 
+        calculator calc = new calculator();
+        calc.add(10,15);// accessing the object from other class
+
     }
 }
+
+
