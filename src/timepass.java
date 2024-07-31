@@ -1,38 +1,38 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
-//Practice
-
-class calculator{
-    public void add(int n1, int n2){
-        int result = n1 + n2;
-        System.out.println("Addition of two values = " + result);
-    }
-}
 
 public class timepass {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
 
-        //Data types
-        int i = 10;
-        short sh = 12;
-        long l = 12;
-        byte b = 12;
-        float f = 5.8f;
-        double d = 5.8;
-        boolean bo = true;
-        char c = 'A';
+        class Mobile{
+            String brand;
+            int price;
+            static String name;
 
-        if (i >= 11){
-            System.out.println("Hello");
-        }
-        else{
-            System.out.println("Bye");
+            public void show(){
+                System.out.println(brand + " : " + price + " : " + name);
+            }
+
+            public static void show1(){
+                System.out.println("I am static");
+
+            }
+
         }
 
-        calculator calc = new calculator();
-        calc.add(10,15);// accessing the object from other class
+        Mobile obj1 = new Mobile();
+        obj1.brand = "Apple";
+        obj1.price = 1500;
+        obj1.name = "Smartphone";
 
+        Mobile obj2 = new Mobile();
+        obj2.brand = "Samsung";
+        obj2.price = 1700;
+        obj2.name = "Smartphone";
+
+        obj1.show();
+        obj2.show();
+        Mobile.show1();
     }
 }
 
