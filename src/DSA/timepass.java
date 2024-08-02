@@ -1,5 +1,4 @@
-import java.sql.SQLOutput;
-import java.util.Scanner;
+package DSA;
 
 public class timepass {
     public static void main(String[] args) {

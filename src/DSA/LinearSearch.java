@@ -1,7 +1,6 @@
-import com.sun.source.tree.BreakTree;
+package DSA;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class LinearSearch {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-
+package fundamentals;
 
 class Calculator{
     public int add(int n1, int n2) {
@@ -14,7 +14,7 @@ class AdvanceCalculator{
 
 public class Overriding {
     public static void main(String[] args) {
-        System.out.println("This is method Overriding!");
+        System.out.println("This is method fundamentals.Overriding!");
 
         AdvanceCalculator obj = new AdvanceCalculator();
         int r1 = obj.add(3,3);

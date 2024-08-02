@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package fundamentals;
 
 public class Inheritance {
     public static void main(String[] args) {

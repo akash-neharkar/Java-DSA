@@ -1,5 +1,4 @@
-import java.sql.SQLOutput;
-import java.util.Scanner;
+package fundamentals;
 
 class Human{
     private String name = "Akash";

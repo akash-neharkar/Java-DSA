@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package fundamentals;
 
-//Encapsulation
+//fundamentals.Encapsulation
 public class Important {
 
     class Human{

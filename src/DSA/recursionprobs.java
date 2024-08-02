@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package DSA;
 
 public class recursionprobs {
     public static void main(String[] args) {
