@@ -3,10 +3,10 @@ package DSA;
 public class BasicOperations {
     public static void main(String[] args) {
         int[] array = {1,2,3,4,5};
-        System.out.println("Input array: ");
+        System.out.println("Input array:");
         printarray(array);
         reversearray(array);
-        System.out.println("Reversed array: ");
+        System.out.println("Reversed array:");
         printarray(array);
     }
 
