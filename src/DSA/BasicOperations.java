@@ -2,6 +2,7 @@ package DSA;
 
 public class BasicOperations {
     public static void main(String[] args) {
+
         int[] array = {1,2,3,4,5};
         System.out.println("Input array:");
         printarray(array);
@@ -30,4 +31,5 @@ public class BasicOperations {
         }
         System.out.println();
     }
+
 }
