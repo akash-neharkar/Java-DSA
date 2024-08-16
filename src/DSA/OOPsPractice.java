@@ -20,7 +20,7 @@ public class OOPsPractice {
         String name;
         float marks;
 
-        student(int rollno, String name, float marks, int age){
+        student(int rollno, String name, float marks){
             this.rollno = rollno;
             this.name = name;
             this.marks = marks;
