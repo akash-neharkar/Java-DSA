@@ -1,12 +1,8 @@
 package fundamentals;
 
 class Human{
-    private String name = "Akash";
-    private int age = 21;
-
-    public Human(){
-        System.out.println("I am in constructor!");
-    }
+    private String name;
+    private int age;
 
     public int getAge() {
         return age;
@@ -14,15 +10,17 @@ class Human{
     public String getName(){
         return name;
     }
+    public void setAge(int newAge) { age = newAge; }
+    public void setName(String newName) { name = newName; }
 }
+
 
 public class Encapsulation {
 
     public static void main(String[] args) {
         Human obj = new Human();
-        Human obj1 = new Human();
-//        obj.name = "Akash";
-//        obj.age = 21;
+        obj.setAge(21);
+        obj.setName("Akash");
         System.out.println(obj.getName() + " " + obj.getAge());
     }
 }
