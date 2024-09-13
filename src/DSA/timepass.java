@@ -57,7 +57,6 @@ public class timepass {
         String a = new String("Akash");
         String b = new String("Akash");
         System.out.println(a==b);
-
     }
 }
 
