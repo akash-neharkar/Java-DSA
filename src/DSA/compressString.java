@@ -1,45 +1,38 @@
 package DSA;
+import java.util.*;
 
-public class compressString {
-
+public class compressString{
     public static void main(String[] args) {
-        String originalString = "aaabbcccdddddddddddddddddd";
-        String compressedString = compressString(originalString);
-        System.out.println(compressedString);
+        String s= "aabbccccddd";
+        System.out.println(compress(s));
     }
 
-        public static String compressString(String str) {
-            if (str == null || str.length() == 0) {
-                return str; // Return the original string if it's empty or null
-            }
+    public static String compress(String s){
 
-            StringBuilder compressed = new StringBuilder();
-            int count = 1; // Start counting from 1
-
-            // Iterate through the string
-            for (int i = 1; i < str.length(); i++) {
-                // If the current character is the same as the previous one, increment the count
-                if (str.charAt(i) == str.charAt(i - 1)) {
-                    count++;
-                } else {
-                    // Append the character and its count to the result
-                    compressed.append(str.charAt(i - 1));
-                    if (count > 1) {
-                        compressed.append(count);
-                    }
-                    count = 1; // Reset the count for the new character
-                }
-            }
-
-            // Append the last character and its count
-            compressed.append(str.charAt(str.length() - 1));
-            if (count > 1) {
-                compressed.append(count);
-            }
-
-            return compressed.toString();
+        if(s.length() == 0 ||  s == null){
+            return s;
         }
 
+        StringBuilder list = new StringBuilder();
+        int count = 1;
 
+        for (int i = 1; i < s.length(); i++) {
+            if(s.charAt(i) == s.charAt(i-1)){
+                count += 1;
+            }
+            else{
+                list.append(s.charAt(i-1));
+                if(count > 1){
+                    list.append(count);
+                }
+                count = 1;
+            }
+        }
 
+        list.append(s.charAt(s.length()-1));
+        if (count > 1){
+            list.append(count);
+        }
+        return list.toString();
+    }
 }
