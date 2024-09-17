@@ -1,17 +1,15 @@
 package DSA;
-
 import java.util.Arrays;
 
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {-18,-12,0,4,5,6,7,8,9,10,12,115};
-        int target = -18;
+        int target = -12;
         int ans = binarysearch(arr, target);
-//        System.out.println(ans);
-
+        System.out.println(ans);
 
         int[][] arr1 = {{3,4,5},{6,7,8},{9,10,11}};
-        System.out.println(Arrays.toString(search(arr1,10)));
+        System.out.println(Arrays.toString(search(arr1,3)));
     }
 
     //Binary search in 1D array
