@@ -2,7 +2,7 @@ package DSA;
 
 public class valleyHiking {
     public static void main(String[] args) {
-        String s = "UDDDUDUUUUDDUUUDDD";
+        String s = "UDDDUDUU";
 
         int countu = 0;
         int countd = 0;

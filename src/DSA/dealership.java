@@ -19,6 +19,5 @@ public class dealership {
 
             System.out.println("Total Tyres for Dealership " + i + " = " + totaltyers);
         }
-
     }
 }

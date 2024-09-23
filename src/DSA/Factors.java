@@ -9,7 +9,7 @@ public class Factors {
         int[] res = factors(a);
         System.out.println(Arrays.toString(res));
     }
-
+    
     public static int[] factors(int a) {
         ArrayList<Integer> factorList = new ArrayList<>();
 
