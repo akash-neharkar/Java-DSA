@@ -2,22 +2,23 @@ package DSA;
 
 public class palindrome {
     public static void main(String[] args) {
-        String test = "ABCDEFGHHGFEDCBAASCSCSDW";
-        System.out.println(palindromeCheck(test));
+        String s = "mom";
+        System.out.println(palindromecheck(s));
     }
 
-    public static boolean palindromeCheck(String test){
+    public static boolean palindromecheck(String s){
         int start = 0;
-        int end = test.length() - 1;
+        int end = s.length() - 1;
 
-        while (start < end){
-            if (test.charAt(start)!= test.charAt(end)){
-                return false;
+        while(start <= end) {
+            for (int i = 0; i < s.length(); i++) {
+                if(s.charAt(start) != s.charAt(end)){
+                    return false;
+                }
+                start++;
+                end--;
             }
-            start += 1;
-            end -= 1;
         }
         return true;
     }
-
 }
