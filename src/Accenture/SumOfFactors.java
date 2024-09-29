@@ -14,29 +14,18 @@ public class SumOfFactors {
 
     }
 
-    static int sum(int m, int n){
-        ArrayList<Integer> divisible = new ArrayList<>();
-        ArrayList<Integer> notdivisible = new ArrayList<>();
+    static int sum(int m, int n) {
+        int sum1 = 0;
+        int sum2 = 0;
 
-        for (int i = 1; i <= m ; i++) {
-            if (i%n == 0){
-                divisible.add(i);
+        for (int i = 0; i <= m ; i++) {
+            if(i % n == 0){
+                sum1 = sum1 + i;
             }
             else{
-                notdivisible.add(i);
+                sum2 = sum2 + i;
             }
         }
-
-        int sumofdivisibles = 0;
-        int sumofnotdivisibles = 0;
-
-        for (int k : divisible){
-            sumofdivisibles += k;
-        }
-
-        for (int j : notdivisible){
-            sumofnotdivisibles += j;
-        }
-        return sumofnotdivisibles - sumofdivisibles;
-     }
+        return Math.abs(sum1 - sum2);
+    }
 }
