@@ -16,7 +16,7 @@ public class MaxOfArray {
         maxInArray(arr, n);
     }
 
-    public static void maxInArray (int arr[], int length)
+    public static void maxInArray (int[] arr, int length)
     {
         int max = arr[0], index = 0;
         for (int i = 1; i < length; i++)
@@ -28,5 +28,4 @@ public class MaxOfArray {
         System.out.println (max);
         System.out.println (index);
     }
-
 }
