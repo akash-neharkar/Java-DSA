@@ -1,6 +1,7 @@
     package BasicCodes;
     import java.util.Scanner;
 
+    //Patterns
 
     public class Patterns {
         public static void main(String[] args) {
