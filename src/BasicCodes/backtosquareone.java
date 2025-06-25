@@ -1,30 +1,26 @@
 package BasicCodes;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class backtosquareone {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-        Scanner in = new Scanner(System.in);
-
-        int[] arr = {1, 2, 3, 4, 5, 6};
-        System.out.println("Enter the number you want to find: ");
-        int n = in.nextInt();
-
-        int res = findnumber(arr, n);
-        System.out.println(res);
-
+    static void towerOfHanoi(int n, char from_rod,
+                             char to_rod, char aux_rod)
+    {
+        if (n == 0) {
+            return;
+        }
+        towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+        System.out.println("Move disk " + n + " from rod "
+                + from_rod + " to rod "
+                + to_rod);
+        towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
     }
 
-    public static int findnumber(int[] arr, int n){
+    // Driver code
+    public static void main(String args[])
+    {
+        int N = 3;
 
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] == n){
-                return i;
-            }
-        }
-        return -1;
+        // A, B and C are names of rods
+        towerOfHanoi(N, 'A', 'C', 'B');
     }
 }
